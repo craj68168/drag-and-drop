@@ -6,8 +6,6 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
-
   .container {
     width: 50%;
     border: 1px solid #000;
@@ -16,22 +14,43 @@ const Wrapper = styled.div`
       display: flex;
       flex-direction: column;
       .items {
-        border: 1px solid red;
-        height: 100px;
         margin: 10px;
         border-radius: 10px;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        margin:20px 15px;
       }
     }
   }
 `;
 const Home = () => {
   const items = [
-    { key: 1, value: "Item One" },
-    { key: 2, value: "Item Two" },
-    { key: 3, value: "Item Three" },
-    { key: 4, value: "Item Four" },
-    { key: 5, value: "Item Five" },
-    { key: 6, value: "Item Six" },
+    {
+      key: 1,
+      value: "This picture is about the dog and its loyality",
+      image: "https://picsum.photos/id/237/400/500",
+    },
+    {
+      key: 2,
+      value: "This picture show the mountains and its beauty",
+      image: "https://picsum.photos/seed/picsum/400/500",
+    },
+    {
+      key: 3,
+      value: "Its all about the rainy seasons",
+      image: "https://picsum.photos/200/300?grayscale",
+    },
+    {
+      key: 4,
+      value: "Wanna travell different beautiful places",
+      image: "https://picsum.photos/200/300/",
+    },
+    {
+      key: 5,
+      value: "Its a good friday lets meet in the bar to celebrate with friends",
+      image: "https://picsum.photos/200/300.jpg",
+    },
   ];
   const [characters, updateCharacter] = useState(items);
   const handleOnDragEnd = (val: any) => {
@@ -62,7 +81,12 @@ const Home = () => {
                           {...provided.dragHandleProps}
                           ref={provided.innerRef}
                         >
-                          {val.value}
+                          <img
+                            src={val?.image}
+                            width={"100px"}
+                            height={"100px"}
+                          />
+                          <h2>{val.value}</h2>
                         </div>
                       )}
                     </Draggable>
