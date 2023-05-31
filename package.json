@@ -20,6 +20,7 @@
     "typescript": "5.0.4"
   },
   "devDependencies": {
+    "@types/react-beautiful-dnd": "^13.1.4",
     "@types/styled-components": "^5.1.26"
   }
 }
