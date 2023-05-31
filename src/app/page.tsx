@@ -28,22 +28,22 @@ const Home = () => {
   const items = [
     {
       key: 1,
-      value: "This picture is about the dog and its loyality",
+      value: "This picture is about the dog and its loyality with its owners",
       image: "https://picsum.photos/id/237/400/500",
     },
     {
       key: 2,
-      value: "This picture show the mountains and its beauty",
+      value: "This picture show the mountains and its beauty. Lets climb mount everest together",
       image: "https://picsum.photos/seed/picsum/400/500",
     },
     {
       key: 3,
-      value: "Its all about the rainy seasons",
+      value: "Life is short enjoy your every day be happy and make other happy",
       image: "https://picsum.photos/200/300?grayscale",
     },
     {
       key: 4,
-      value: "Wanna travell different beautiful places",
+      value: "Wanna travell different beautiful places of different county with your close ones",
       image: "https://picsum.photos/200/300/",
     },
     {
